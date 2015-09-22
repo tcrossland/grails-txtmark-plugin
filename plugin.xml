@@ -1,0 +1,12 @@
+<plugin name='txtmark' version='0.1' grailsVersion='2.3 &gt; *'>
+  <author>Tom Crossland</author>
+  <authorEmail>tom.crossland@bluetab.net</authorEmail>
+  <title>Grails Txtmark Plugin</title>
+  <description>Markdown rendering support using the Txtmark processor.
+</description>
+  <documentation>https://github.com/tcrossland/grails-txtmark-plugin</documentation>
+  <type>TxtmarkGrailsPlugin</type>
+  <resources>
+    <resource>grails.plugins.txtmark.TxtmarkTagLib</resource>
+  </resources>
+</plugin>
