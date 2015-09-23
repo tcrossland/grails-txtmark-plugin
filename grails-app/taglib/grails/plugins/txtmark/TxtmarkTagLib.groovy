@@ -7,8 +7,8 @@ class TxtmarkTagLib {
     CompactDecorator decorator = new CompactDecorator()
     Configuration configuration = Configuration.builder().setDecorator(decorator).build()
 
-    Closure markdown = { attrs, body ->
-        def text = attrs.text ?: body() ?: ""
-        out << Processor.process(text.toString(), configuration)
+    def markdown = { attrs, body ->
+        String text = attrs.text ?: body() ?: ""
+        out << Processor.process(text, configuration)
     }
 }
