@@ -1,6 +1,10 @@
 .classpath
 .project
-.idea/
-target/
+.idea
+target
 *.iml
-*.zip
+*.log
+grails-txtmark-*.zip
+grails-txtmark-*.zip.sha1
+plugin.xml
+web-app

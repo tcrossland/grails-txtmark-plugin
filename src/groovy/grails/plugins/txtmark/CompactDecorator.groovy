@@ -9,54 +9,51 @@ class CompactDecorator extends DefaultDecorator {
 
     @Override
     void closeParagraph(StringBuilder out) {
-        out.append("</p>")
+        out << "</p>"
     }
 
     @Override
-    public void closeBlockquote(final StringBuilder out) {
-        out.append("</blockquote>")
+    void closeBlockquote(final StringBuilder out) {
+        out << "</blockquote>"
     }
 
     @Override
-    public void closeCodeBlock(final StringBuilder out) {
-        out.append("</code></pre>")
+    void closeCodeBlock(final StringBuilder out) {
+        out << "</code></pre>"
     }
 
     @Override
-    public void closeHeadline(final StringBuilder out, final int level) {
-        out.append("</h")
-        out.append(level)
-        out.append(">")
+    void closeHeadline(final StringBuilder out, final int level) {
+        out << "</h" << level << ">"
     }
 
     @Override
-    public void openOrderedList(final StringBuilder out) {
-        out.append("<ol>")
+    void openOrderedList(final StringBuilder out) {
+        out << "<ol>"
     }
 
     @Override
-    public void closeOrderedList(final StringBuilder out) {
-        out.append("</ol>")
+    void closeOrderedList(final StringBuilder out) {
+        out << "</ol>"
     }
 
     @Override
-    public void openUnorderedList(final StringBuilder out) {
-        out.append("<ul>")
+    void openUnorderedList(final StringBuilder out) {
+        out << "<ul>"
     }
 
     @Override
-    public void closeUnorderedList(final StringBuilder out) {
-        out.append("</ul>")
+    void closeUnorderedList(final StringBuilder out) {
+        out << "</ul>"
     }
 
     @Override
-    public void closeListItem(final StringBuilder out) {
-        out.append("</li>")
+    void closeListItem(final StringBuilder out) {
+        out << "</li>"
     }
 
     @Override
-    public void horizontalRuler(final StringBuilder out) {
-        out.append("<hr/>")
+    void horizontalRuler(final StringBuilder out) {
+        out << "<hr/>"
     }
-
 }
